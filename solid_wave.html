@@ -1,72 +1,81 @@
 <!DOCTYPE HTML>
 <html lang="ja-JP">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Solid Wave</title>
     <style>
-      body {
-        background-color: #afafaf;
-      }
-      .myCanvas {
-		position: absolute;
-		margin: 0;
-		padding: 0;
-		left: 0;
-		top: 0;
-      }
-      #area1 {
-        position: relative;
-		width: 600px;
-		height: 100px;
-    padding: 5px;
-      }
-      #area2 {
-        position: relative;
-    width: 600;
-    height: 200px;
-    padding: 5px;
-    }
-      #area3 {
-        position: relative;
-    width: 600px;
-    height: 200px;
-      }
-      #graph1 {
-        background-color: #dfffff;
-      }
-      #graph2 {
-        background-color: #eff4ff;
-      }
-      #graph3 {
-        background-color: #ffedc1;
-      }
+        body {
+            background-color: #afafaf;
+        }
+
+        .myCanvas {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            left: 0;
+            top: 0;
+        }
+
+        #area1 {
+            position: relative;
+            width: 600px;
+            height: 100px;
+            padding: 5px;
+        }
+
+        #area2 {
+            position: relative;
+            width: 600;
+            height: 200px;
+            padding: 5px;
+        }
+
+        #area3 {
+            position: relative;
+            width: 600px;
+            height: 200px;
+        }
+
+        #graph1 {
+            background-color: #dfffff;
+        }
+
+        #graph2 {
+            background-color: #eff4ff;
+        }
+
+        #graph3 {
+            background-color: #ffedc1;
+        }
     </style>
     <script src="solid_wave.jsx.js"></script>
     <script>
-      window.addEventListener("load", function(e) {
-		JSX.require("solid_wave.jsx").solid_wave.main$SSS( "graph1", "graph2", "graph3" );
-		JSX.require("solid_wave.jsx").gui.main$SSSS( "start", "stop", "b03", "b05" );
-      });
+        window.addEventListener("load", function(e) {
+            JSX.require("solid_wave.jsx").solid_wave.main$SSS("graph1", "graph2", "graph3");
+            JSX.require("solid_wave.jsx").gui.main$SSSS("start", "stop", "b03", "b05");
+        });
     </script>
-  </head>
-  <body>
-    <p>縦波</p>
-  <div id="area1">
-    <canvas class="myCanvas" id="graph1" width="600" height="100"></canvas>
-    <canvas class="myCanvas" id="graph1b" width="600" height="100"></canvas>
-  </div>
-  <p>横波</p>
-  <div id="area2">
-    <canvas class="myCanvas" id="graph2" width="600" height="200"></canvas>
-    <canvas class="myCanvas" id="graph2b" width="600" height="200"></canvas>
-  </div>
-  <p>弾性表面波</p>
-  <div id="area3">
-    <canvas class="myCanvas" id="graph3" width="600" height="200"></canvas>
-    <canvas class="myCanvas" id="graph3b" width="600" height="200"></canvas>
-  </div>
-  <button type="button" id="start">start</button>
-  <button type="button" id="stop">stop</button>
-  </body>
-</html>
+</head>
 
+<body>
+    <p>縦波</p>
+    <div id="area1">
+        <canvas class="myCanvas" id="graph1" width="600" height="100"></canvas>
+        <canvas class="myCanvas" id="graph1b" width="600" height="100"></canvas>
+    </div>
+    <p>横波</p>
+    <div id="area2">
+        <canvas class="myCanvas" id="graph2" width="600" height="200"></canvas>
+        <canvas class="myCanvas" id="graph2b" width="600" height="200"></canvas>
+    </div>
+    <p>弾性表面波</p>
+    <div id="area3">
+        <canvas class="myCanvas" id="graph3" width="600" height="200"></canvas>
+        <canvas class="myCanvas" id="graph3b" width="600" height="200"></canvas>
+    </div>
+    <button type="button" id="start">start</button>
+    <button type="button" id="stop">stop</button>
+</body>
+
+</html>
